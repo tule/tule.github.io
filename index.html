@@ -36,6 +36,17 @@
         <article class="markdown-body">
           <h3>
 <a id="welcome-to-my-blog" class="anchor" href="#welcome-to-my-blog" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to my blog.</h3>
+          ---
+      　　layout: default
+      　　title: 我的Blog
+      　　---
+      　　<h2>{{ page.title }}</h2>
+      　　<p>最新文章</p>
+      　　<ul>
+      　　　　{% for post in site.posts %}
+      　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+      　　　　{% endfor %}
+      　　</ul>
         </article>
       </div>
     </div>
