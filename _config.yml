@@ -3,7 +3,7 @@ title: 图乐的技术博客
 email: 
 description: > #图乐的技术博客
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+url: "http://tule.github.io" # the base hostname & protocol for your site
 twitter_username: 
 github_username:  
 
